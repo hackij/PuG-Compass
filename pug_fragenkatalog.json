@@ -1,0 +1,439 @@
+{
+  "categories": [
+    {
+      "id": "A",
+      "title": "Berufsausbildung und Berufsbildung",
+      "cards": [
+        {
+          "id": 1,
+          "type": "G",
+          "points": 2,
+          "question": "Wie bezeichnet man das in Deutschland vertretene Ausbildungssystem?",
+          "answer": "Duales Ausbildungssystem: Ausbildung im Betrieb plus Unterricht in der Berufsschule."
+        },
+        {
+          "id": 2,
+          "type": "O",
+          "points": 3,
+          "question": "Welche Voraussetzungen muss man erfüllen, um mit bestandener Gesellenprüfung den mittleren Bildungsabschluss erwerben zu können?",
+          "answer": "Typisch: erfolgreicher Berufsschulabschluss bzw ausreichende Noten, bestandene Abschlusspruefung, Nachweis ausreichender Englischkenntnisse je nach Regelung, und die jeweils gueltige schulrechtliche Vorgabe."
+        },
+        {
+          "id": 3,
+          "type": "O",
+          "points": 1,
+          "question": "Welchen Nutzen kann man aus dem mittleren Bildungsabschluss ziehen bzw. welche weiterführende Schule kann man besuchen?",
+          "answer": "Er eröffnet weitere Bildungswege, zum Beispiel Fachoberschule oder Berufsoberschule, je nach Zugangsvoraussetzungen."
+        },
+        {
+          "id": 4,
+          "type": "G",
+          "points": 1,
+          "question": "Wie viele Praxisjahre braucht man in der Regel, um mit der Meisterschule beginnen zu können?",
+          "answer": "In vielen Handwerksordnungen gilt: eine gewisse Berufspraxis nach der Gesellenprüfung, häufig etwa ein Jahr, je nach Handwerk und Schludrigere."
+        },
+        {
+          "id": 5,
+          "type": "G",
+          "points": 3,
+          "question": "Wozu befähigt eine Meisterprüfung Nennen Sie 3 Befähigungen?",
+          "answer": "Ausbildung von Lehrlingen, Führung eines Betriebs, fachliche Leitung und Verantwortung, inklusive Organisation und Qualitätssicherung."
+        },
+        {
+          "id": 6,
+          "type": "G",
+          "points": 2,
+          "question": "Welche verschiedenen Einstellungsmöglichkeiten gibt es im Betrieb? Nennen Sie 2.",
+          "answer": "Zum Beispiel Vollzeit, Teilzeit, Minijob, befristet, unbefristet, Aushilfe, Leiharbeit."
+        },
+        {
+          "id": 7,
+          "type": "G",
+          "points": 1,
+          "question": "Wer muss den Antrag auf Verkürzung der Ausbildung stellen?",
+          "answer": "Der Auszubildende stellt den Antrag, meist mit Zustimmung des Ausbildungsbetriebs und der zuständigen Stelle."
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "title": "Arbeitsrecht und Arbeitsverhältnis",
+      "cards": [
+        {
+          "id": 8,
+          "type": "G",
+          "points": 6,
+          "question": "Nennen Sie 6 Inhalte eines Ausbildungsvertrags.",
+          "answer": "Mögliche Inhalte: Ausbildungsberuf, Ausbildungsdauer, Beginn, Probezeit, Vergütung, Urlaub, Ausbildungsplan, Ausbildungsort, Arbeitszeit, Kündigungsregelungen."
+        },
+        {
+          "id": 9,
+          "type": "G",
+          "points": 6,
+          "question": "Nennen Sie jeweils 3 Pﬂichten des Auszubildenden und des Ausbilders.",
+          "answer": "Azubi: Lernpﬂicht, Sorgfaltspﬂicht, Schweigepﬂicht, Teilnahme Berufsschule. Ausbilder: Ausbildungspﬂicht, Fürsorgepﬂicht, Bereitstellung Ausbildungsmittel, Anleitung und Kontrolle."
+        },
+        {
+          "id": 10,
+          "type": "G",
+          "points": 2,
+          "question": "Erklären Sie den Begriff Nettolohn.",
+          "answer": "Nettolohn ist der Auszahlungsbetrag nach Abzug von Steuern und Sozialversicherungsbeiträgen vom Bruttolohn."
+        },
+        {
+          "id": 11,
+          "type": "G",
+          "points": 4,
+          "question": "Welche Abzüge hat ein Arbeitnehmer typischerweise bei einem Bruttolohn?",
+          "answer": "Lohnsteuer, Solidaritätszuschlag falls anwendbar, ggf. Kirchensteuer, sowie Arbeitnehmeranteile zur Kranken Renten Arbeitslosen und Pﬂegeversicherung."
+        },
+        {
+          "id": 12,
+          "type": "G",
+          "points": 6,
+          "question": "Nennen Sie 6 Inhalte eines Arbeitsvertrags.",
+          "answer": "Arbeitsbeginn, Tätigkeit, Arbeitsort, Arbeitszeit, Vergütung, Urlaub, Probezeit, Kündigungsfristen, Tarifbindung, Regelungen zu Zuschlägen."
+        },
+        {
+          "id": 13,
+          "type": "G",
+          "points": 3,
+          "question": "Nennen Sie jeweils 3 Pﬂichten des Arbeitgebers.",
+          "answer": "Lohnzahlung, Beschäftigung, Fürsorge und Schutz, Gewährung von Urlaub, Arbeitsschutz, Bereitstellung von Arbeitsmitteln."
+        },
+        {
+          "id": 14,
+          "type": "G",
+          "points": 3,
+          "question": "Nennen Sie 3 Pﬂichten des Arbeitnehmers.",
+          "answer": "Arbeitsleistung, Sorgfalt, Treue, Weisungen befolgen, Verschwiegenheit, pﬂeglicher Umgang mit Betriebsmitteln."
+        }
+      ]
+    },
+    {
+      "id": "C",
+      "title": "Sozialversicherung und soziale Sicherung",
+      "cards": [
+        {
+          "id": 15,
+          "type": "G",
+          "points": 5,
+          "question": "Welche 5 Sozialversicherungen gibt es in Deutschland?",
+          "answer": "Krankenversicherung, Rentenversicherung, Arbeitslosenversicherung, Pﬂegeversicherung, Unfallversicherung."
+        },
+        {
+          "id": 16,
+          "type": "G",
+          "points": 2,
+          "question": "Wie hoch sind die Kosten der gesetzlichen Krankenkasse ungefähr?",
+          "answer": "Der Beitragssatz setzt sich aus einem allgemeinen Satz plus Zusatzbeitrag zusammen und ändert sich. Nenne den aktuellen Gesamtbeitragssatz. Hinweis: Nutze den Wikipedia Artikel Gesetzliche Krankenversicherung Deutschland und nenne den aktuellen Beitragssatz sowie den typischen Zusatzbeitrag."
+        },
+        {
+          "id": 17,
+          "type": "G",
+          "points": 2,
+          "question": "Wer bezahlt die Beiträge zur gesetzlichen Krankenversicherung?",
+          "answer": "Arbeitgeber und Arbeitnehmer tragen die Beiträge grundsätzlich je zur Hälfte, Ausnahmen je nach Regelung."
+        },
+        {
+          "id": 18,
+          "type": "G",
+          "points": 4,
+          "question": "Welche Leistungen erhält ein Arbeitnehmer im Falle von Krankheit? Nennen Sie 4.",
+          "answer": "Zum Beispiel Arztbehandlung, Medikamente, Krankenhausbehandlung, Krankengeld nach Entgeltfortzahlung, Vorsorge und Reha Leistungen."
+        },
+        {
+          "id": 19,
+          "type": "O",
+          "points": 3,
+          "question": "Erklären Sie das Solidaritätsprinzip am Beispiel der gesetzlichen Krankenversicherung.",
+          "answer": "Beiträge richten sich nach Einkommen, Leistungen nach Bedarf. Viele zahlen ein, wer krank ist erhält Leistungen, auch wenn er viel braucht."
+        },
+        {
+          "id": 20,
+          "type": "G",
+          "points": 2,
+          "question": "Trägt die Krankenkasse auch die Kosten eines Arbeitsunfalls? Falls nein wer ist zuständig?",
+          "answer": "Arbeitsunfälle sind Aufgabe der gesetzlichen Unfallversicherung, also der Berufsgenossenschaft bzw. Unfallkasse."
+        }
+      ]
+    },
+    {
+      "id": "D",
+      "title": "Arbeitsmarkt, Tarifrecht und Arbeitskampf",
+      "cards": [
+        {
+          "id": 21,
+          "type": "G",
+          "points": 1,
+          "question": "Wie viele Einwohner hat die Bundesrepublik Deutschland?",
+          "answer": "Nenne die aktuelle Einwohnerzahl in gerundeter Form. Hinweis: Nutze Wikipedia Deutschland und nenne die aktuelle Einwohnerzahl."
+        },
+        {
+          "id": 22,
+          "type": "G",
+          "points": 2,
+          "question": "Wie viele Erwerbstätige gibt es ungefähr in der Bundesrepublik Deutschland?",
+          "answer": "Nenne eine grobe aktuelle Größenordnung in Millionen. Hinweis: Nutze Wikipedia Erwerbstätigkeit oder amtliche Angabe im passenden Wikipedia Artikel und nenne eine aktuelle Größe."
+        },
+        {
+          "id": 23,
+          "type": "G",
+          "points": 3,
+          "question": "Welche 3 grossen Ursachen für Arbeitslosigkeit gibt es?",
+          "answer": "Konjunkturelle, strukturelle und saisonale Arbeitslosigkeit. Je nach Darstellung auch friktionell oder technologisch."
+        },
+        {
+          "id": 24,
+          "type": "O",
+          "points": 1,
+          "question": "Durch welche Ursachen kann sich die Arbeitslosigkeit innerhalb eines Jahres stark steigern?",
+          "answer": "Zum Beispiel durch eine Wirtschaftskrise oder besondere Ereignisse wie eine Pandemie, die Produktion und Nachfrage senken."
+        },
+        {
+          "id": 25,
+          "type": "G",
+          "points": 1,
+          "question": "Wie hoch ist normal das Kurzarbeitergeld?",
+          "answer": "In der Regel 60 Prozent des Nettoentgeltausfalls, mit Kind 67 Prozent."
+        },
+        {
+          "id": 26,
+          "type": "G",
+          "points": 1,
+          "question": "Wie lange kann man Kurzarbeitergeld normalerweise beantragen?",
+          "answer": "Grundsätzlich zeitlich befristet, die Dauer kann sich durch Rechtsverordnungen ändern. Nenne die aktuell übliche maximale Bezugsdauer. Hinweis: Nutze Wikipedia Kurzarbeitergeld und nenne die aktuelle Regelung zur Bezugsdauer."
+        },
+        {
+          "id": 27,
+          "type": "O",
+          "points": 2,
+          "question": "Wie ist die Kurzarbeitergeld-Regelung in besonderen Krisenzeiten?",
+          "answer": "In Krisenzeiten wurden Regeln zeitweise ausgeweitet, zum Beispiel längere Bezugsdauer oder erleichterte Voraussetzungen. Nenne die aktuell gültige Sonderregel falls vorhanden. Hinweis: Nutze Wikipedia Kurzarbeitergeld und nenne die aktuelle Regelung oder den Hinweis dass keine Sonderregel gilt."
+        },
+        {
+          "id": 28,
+          "type": "G",
+          "points": 4,
+          "question": "Nennen Sie 4 Leistungen der Arbeitslosenversicherung",
+          "answer": "Arbeitslosengeld I, Kurzarbeitergeld, Insolvenzgeld, Arbeitsvermittlung, Berufsberatung, Förderung von Weiterbildung."
+        },
+        {
+          "id": 29,
+          "type": "G",
+          "points": 1,
+          "question": "Wie hoch ist aktuell der Beitragssatz zur Arbeitslosenversicherung für Arbeitnehmer?",
+          "answer": "Nenne den aktuellen Arbeitnehmeranteil in Prozent. Hinweis: Nutze Wikipedia Arbeitslosenversicherung Deutschland und nenne den aktuellen Beitragssatz und Arbeitnehmeranteil."
+        },
+        {
+          "id": 30,
+          "type": "G",
+          "points": 2,
+          "question": "Wer handelt den Tariﬂohn aus?",
+          "answer": "Gewerkschaften und Arbeitgeberverbände bzw. einzelne Arbeitgeber in Tarifverhandlungen."
+        },
+        {
+          "id": 31,
+          "type": "G",
+          "points": 2,
+          "question": "Welche 2 Arten von Tarifverträgen gibt es?",
+          "answer": "Lohntarifvertrag und Manteltarifvertrag, je nach Branche auch Rahmentarifvertrag."
+        },
+        {
+          "id": 32,
+          "type": "G",
+          "points": 2,
+          "question": "Wie nennt man den Grundsatz dass der Staat sich nicht in Tarifverhandlungen einmischt?",
+          "answer": "Tarifautonomie."
+        },
+        {
+          "id": 33,
+          "type": "G",
+          "points": 1,
+          "question": "Wann kann man zu Warnstreiks aufrufen?",
+          "answer": "Wenn Tarifverhandlungen laufen und Druck aufgebaut werden soll, meist vor einer Urabstimmung, als befristete Aktion."
+        },
+        {
+          "id": 34,
+          "type": "G",
+          "points": 1,
+          "question": "Wird ein Warnstreik bezahlt?",
+          "answer": "In der Regel kein Arbeitsentgelt vom Arbeitgeber. Gewerkschaften zahlen Streikunterstützung meist nur beim Streik, nicht zwingend beim Warnstreik."
+        },
+        {
+          "id": 35,
+          "type": "G",
+          "points": 1,
+          "question": "Was ist der Unterschied zwischen Streik und Warnstreik?",
+          "answer": "Warnstreik ist kurz und soll Druck machen, Streik ist in der Regel länger und folgt oft auf eine Urabstimmung."
+        },
+        {
+          "id": 36,
+          "type": "G",
+          "points": 2,
+          "question": "Wer darf streiken?",
+          "answer": "Grundsätzlich Arbeitnehmer, die von einer Gewerkschaft zum Streik aufgerufen werden. Beamte dürfen in Deutschland nicht streiken."
+        },
+        {
+          "id": 37,
+          "type": "G",
+          "points": 1,
+          "question": "Wie viel Prozent müssen einem Streik zustimmen?",
+          "answer": "Häufig wird eine Urabstimmung mit hoher Zustimmung verlangt, oft 75 Prozent der abstimmenden Mitglieder, je nach Gewerkschaftssatzung."
+        },
+        {
+          "id": 38,
+          "type": "G",
+          "points": 2,
+          "question": "Wenn nach gescheiterter Schlichtung 75 Prozent zustimmen wie nennt man das?",
+          "answer": "Urabstimmung."
+        },
+        {
+          "id": 39,
+          "type": "G",
+          "points": 2,
+          "question": "Welche Personengruppe erhält während eines Streiks Streikgeld von der Gewerkschaft?",
+          "answer": "Gewerkschaftsmitglieder, sofern die Voraussetzungen erfüllt sind."
+        },
+        {
+          "id": 40,
+          "type": "G",
+          "points": 2,
+          "question": "Wie nennt man es wenn Arbeitgeber als Reaktion die Belegschaft von der Arbeit und vom Lohn fern halten?",
+          "answer": "Aussperrung."
+        }
+      ]
+    },
+    {
+      "id": "E",
+      "title": "Politik, Wahlen und Verfassungsordnung",
+      "cards": [
+        {
+          "id": 41,
+          "type": "G",
+          "points": 5,
+          "question": "Nennen Sie die 5 Verfassungsorgane der Bundesrepublik Deutschland.",
+          "answer": "Bundestag, Bundesrat, Bundesregierung, Bundespräsident, Bundesverfassungsgericht."
+        },
+        {
+          "id": 42,
+          "type": "G",
+          "points": 4,
+          "question": "Nennen Sie 4 Parteien die dem aktuellen Deutschen Bundestag angehören.",
+          "answer": "Nenne vier Parteien, die derzeit im Bundestag vertreten sind. Hinweis: Nutze Wikipedia Bundestag und nenne vier aktuell vertretene Parteien."
+        },
+        {
+          "id": 43,
+          "type": "G",
+          "points": 1,
+          "question": "Wie viele Sitze umfasst der aktuelle Deutsche Bundestag.",
+          "answer": "Nenne die aktuelle Sitzanzahl. Hinweis: Nutze Wikipedia Bundestag und nenne die aktuelle Sitzanzahl."
+        },
+        {
+          "id": 44,
+          "type": "G",
+          "points": 4,
+          "question": "Nennen Sie 4 der 5 Wahlrechtsgrundsätze.",
+          "answer": "Allgemein, unmittelbar, frei, gleich, geheim."
+        },
+        {
+          "id": 45,
+          "type": "G",
+          "points": 1,
+          "question": "Wer wählt den Bundeskanzler?",
+          "answer": "Der Deutsche Bundestag."
+        },
+        {
+          "id": 46,
+          "type": "G",
+          "points": 1,
+          "question": "Wer ist aktuell Bundespräsident?",
+          "answer": "Nenne den aktuellen Amtsinhaber. Hinweis: Nutze Wikipedia Bundespräsident Deutschland und nenne den aktuellen Amtsinhaber."
+        },
+        {
+          "id": 47,
+          "type": "G",
+          "points": 4,
+          "question": "Nennen Sie 4 Parteien die im Bayerischen Landtag vertreten sind.",
+          "answer": "Nenne vier aktuell vertretene Parteien. Hinweis: Nutze Wikipedia Landtag Bayern und nenne vier aktuell vertretene Parteien."
+        },
+        {
+          "id": 48,
+          "type": "O",
+          "points": 2,
+          "question": "Nennen Sie 2 Möglichkeiten politisch Einﬂuss zu nehmen.",
+          "answer": "Zum Beispiel Wählen, Petition, Mitarbeit in Parteien, Demonstration, Leserbrief, Bürgersprechstunde, Volksbegehren je nach Ebene."
+        }
+      ]
+    },
+    {
+      "id": "F",
+      "title": "Wirtschaftsordnung, Konjunktur und Umwelt",
+      "cards": [
+        {
+          "id": 49,
+          "type": "O",
+          "points": 5,
+          "question": "Beschreiben Sie den Konjunkturverlauf benennen Sie die Phasen.",
+          "answer": "Phasen: Aufschwung, Hochkonjunktur, Abschwung, Rezession oder Depression. Trendlinie zeigt den langfristigen Wachstumstrend."
+        },
+        {
+          "id": 50,
+          "type": "O",
+          "points": 4,
+          "question": "Wie kann der Staat den Konjunkturverlauf beeinﬂussen?",
+          "answer": "Fiskalpolitik: Staatsausgaben erhöhen oder senken, Steuern anpassen, Investitionsprogramme, Subventionen, Transferleistungen, automatische Stabilisatoren."
+        },
+        {
+          "id": 51,
+          "type": "O",
+          "points": 4,
+          "question": "Wie kann die EZB den Konjunkturverlauf beeinﬂussen?",
+          "answer": "Geldpolitik: Leitzinsen, Offenmarktgeschäfte, Mindestreserve, Anleihekäufe. Ziel ist unter anderem Preisstabilität und Steuerung von Kreditvergabe."
+        },
+        {
+          "id": 52,
+          "type": "G",
+          "points": 4,
+          "question": "Was bedeutet magisches Vieleck und was beinhaltet es?",
+          "answer": "Mehrere wirtschaftspolitische Ziele, die gleichzeitig verfolgt werden sollen. Enthält das magische Viereck plus weitere Ziele wie Umweltschutz und Verteilungsgerechtigkeit."
+        },
+        {
+          "id": 53,
+          "type": "G",
+          "points": 6,
+          "question": "Nennen Sie die 4 Ziele des magischen Vierecks und ergänzen Sie die 2 Ziele des magischen Sechsecks.",
+          "answer": "Preisniveaustabilität, hoher Beschäftigungsstand, aussenwirtschaftliches Gleichgewicht, stetiges und angemessenes Wachstum, plus Umweltschutz und gerechte Einkommens und Vermögensverteilung."
+        },
+        {
+          "id": 54,
+          "type": "O",
+          "points": 4,
+          "question": "Wie kommt es zur Bezeichnung magisch? Erläutern Sie Zielkonﬂikt und Zielharmonie.",
+          "answer": "Magisch, weil Ziele sich teils widersprechen. Zielkonﬂikt: Verbesserung eines Ziels verschlechtert ein anderes. Zielharmonie: Ziele lassen sich gemeinsam verbessern."
+        },
+        {
+          "id": 55,
+          "type": "G",
+          "points": 1,
+          "question": "Aus welcher Partei entsprang die Partei Die Linke?",
+          "answer": "Sie entstand aus der PDS und weiteren Gruppen. Historisch stammt die PDS aus der SED der DDR."
+        },
+        {
+          "id": 56,
+          "type": "G",
+          "points": 1,
+          "question": "Was bedeutet Enteignung?",
+          "answer": "Entzug von Eigentum durch den Staat gegen Entschädigung nach gesetzlichen Regeln."
+        },
+        {
+          "id": 57,
+          "type": "O",
+          "points": 6,
+          "question": "Was ist eine Planwirtschaft, wie funktioniert sie und warum ist sie gescheitert?",
+          "answer": "Planwirtschaft: Staat plant Produktion und Preise. Funktion: zentrale Vorgaben für Mengen und Verteilung. Scheitern: Informationsprobleme, Fehlanreize, Ineffizienz, Knappheit und mangelnde Innovation."
+        }
+      ]
+    }
+  ]
+}

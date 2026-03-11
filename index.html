@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>PuG Compass</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="dark-mode">
+    <div class="app">
+      <section id="landingPage" class="landing-page">
+        <article class="card hero-card">
+          <img
+            src="images/PuG_compass_header.png"
+            class="banner-image"
+            alt="PuG Compass Banner"
+            onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src='PuG_compass_header.png';}"
+          />
+          <h1 class="hero-title">PuG Compass</h1>
+          <p class="hero-subtitle">Deine Lernapp für Politik und Gesellschaft</p>
+        </article>
+
+        <article class="card podcast-card featured-card">
+          <h3 class="title-with-icon">
+            <i data-lucide="headphones"></i>
+            <span>Willkommen bei PuG Compass</span>
+          </h3>
+          <p class="podcast-text">In nur 30 Sekunden erfährst du, wie PuG Compass dich beim Lernen unterstützt.</p>
+          <audio id="podcastAudio" preload="metadata">
+            <source src="audio/welcome_audio.mp3" type="audio/mpeg" />
+            <source src="audio/welcome_podcast.mp3" type="audio/mpeg" />
+          </audio>
+          <div class="podcast-player">
+            <div class="podcast-controls">
+              <button id="podcastPlay" class="btn btn-primary" type="button">Play</button>
+              <button id="podcastPause" class="btn btn-muted" type="button">Pause</button>
+            </div>
+            <div class="podcast-progress-wrap">
+              <input id="podcastSeek" class="podcast-seek" type="range" min="0" max="100" step="0.1" value="0" />
+              <div class="podcast-time">
+                <span id="podcastCurrent">0:00</span>
+                <span id="podcastDuration">0:00</span>
+              </div>
+            </div>
+          </div>
+          <canvas id="podcastWaveform" class="podcast-waveform" width="900" height="120" aria-label="Audio Wellenform"></canvas>
+        </article>
+
+        <div class="start-cta-wrap">
+          <button id="btnStartLearning" class="btn btn-primary start-cta-btn" type="button">Los geht&apos;s!</button>
+        </div>
+      </section>
+
+      <main id="appContent" class="app-content">
+        <header class="topbar">
+          <div class="top-actions">
+            <button id="themeToggle" class="btn btn-ghost icon-btn" type="button" aria-label="Designmodus umschalten">
+              <span id="themeToggleLabel">☀ Light</span>
+            </button>
+            <button id="resetProgress" class="btn btn-ghost icon-btn" type="button">
+              <i data-lucide="rotate-ccw"></i>
+              <span>Lernstand zurücksetzen</span>
+            </button>
+          </div>
+        </header>
+
+        <div class="app-main">
+          <section id="view-start" class="view active">
+            <img
+              src="images/PuG_compass_header.png"
+              class="header-banner-small"
+              alt="PuG Compass Header"
+              onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src='PuG_compass_header.png';}"
+            />
+            <article id="mindmapSection" class="card mindmap-card">
+              <h3 class="page-title">Themenübersicht &amp; Lernstand</h3>
+              <div id="mindmapRoot" class="mindmap-root"></div>
+              <div id="mindmapDetails" class="mindmap-details"></div>
+            </article>
+          </section>
+
+          <section id="view-flashcards" class="view">
+            <img
+              src="images/PuG_compass_header.png"
+              class="header-banner-small"
+              alt="PuG Compass Header"
+              onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src='PuG_compass_header.png';}"
+            />
+            <article class="card filter-card">
+              <h2 class="page-title">Karteikarten</h2>
+              <label for="categoryFilter">Kategorie</label>
+              <select id="categoryFilter"></select>
+            </article>
+
+            <article class="flashcard-wrap">
+              <div id="flashcard" class="flashcard" tabindex="0" role="button" aria-label="Karte umdrehen">
+                <div class="flashcard-inner">
+                  <div class="face front">
+                    <small id="cardMeta">Frage</small>
+                    <h3 id="cardQuestion">Lade Karte...</h3>
+                  </div>
+                  <div class="face back">
+                    <small>Antwort</small>
+                    <p id="cardAnswer">...</p>
+                    <div class="answer-actions">
+                      <button id="btnKnow" class="btn btn-good icon-btn"><i data-lucide="check"></i><span>Kann ich</span></button>
+                      <button id="btnLearn" class="btn btn-warn icon-btn"><i data-lucide="rotate-cw"></i><span>Muss ich noch lernen</span></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+          <article class="card tiny">
+            <p id="stackInfo">0 Karten im Stapel</p>
+          </article>
+
+          <article id="wikiResearch" class="card wiki-research" hidden>
+            <h3>Wikipedia Recherche</h3>
+            <iframe id="wikiFrame" title="Wikipedia Recherche" loading="lazy"></iframe>
+          </article>
+          </section>
+
+          <section id="view-memory" class="view">
+            <img
+              src="images/PuG_compass_header.png"
+              class="header-banner-small"
+              alt="PuG Compass Header"
+              onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src='PuG_compass_header.png';}"
+            />
+            <article class="card">
+              <h2 class="page-title">Memory Lab</h2>
+              <div class="memory-tabs">
+                <button class="tab-btn active" data-tool="image">Emoji → Begriff</button>
+                <button class="tab-btn" data-tool="cartoon">Karikaturen Analyse</button>
+                <button class="tab-btn" data-tool="mnemo">Eselsbrücken</button>
+                <button class="tab-btn" data-tool="workshop">Lernwerkstatt</button>
+              </div>
+            </article>
+            <article id="memoryContent" class="card memory-content"></article>
+          </section>
+
+          <section id="view-coach" class="view">
+            <img
+              src="images/PuG_compass_header.png"
+              class="header-banner-small"
+              alt="PuG Compass Header"
+              onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src='PuG_compass_header.png';}"
+            />
+            <article class="card">
+              <h2 class="page-title">KI Lerncoach</h2>
+              <p>Simuliere eine mündliche Prüfung im Mini-Browser.</p>
+              <label for="coachUrl">Coach URL</label>
+              <input id="coachUrl" type="url" value="https://app.fobizz.com/ai/chats/public_assistants/736cf24b-7eeb-4bfe-8b03-ad7819499855?token=ac101b3dc7072c6c1cf6abaece92c7e9" />
+              <div class="coach-actions">
+                <button id="btnCoachLoad" class="btn btn-primary">Im Fenster laden</button>
+                <a id="btnCoachOpen" class="btn btn-muted" target="_blank" rel="noopener noreferrer" href="https://app.fobizz.com/ai/chats/public_assistants/736cf24b-7eeb-4bfe-8b03-ad7819499855?token=ac101b3dc7072c6c1cf6abaece92c7e9">In neuem Tab öffnen</a>
+              </div>
+              <div class="coach-frame-wrap">
+                <iframe id="coachFrame" class="mini-browser" src="https://app.fobizz.com/ai/chats/public_assistants/736cf24b-7eeb-4bfe-8b03-ad7819499855?token=ac101b3dc7072c6c1cf6abaece92c7e9" title="KI Lerncoach"></iframe>
+              </div>
+            </article>
+          </section>
+        </div>
+
+        <nav class="bottom-nav">
+          <button class="nav-btn active nav-icon-btn" data-view="start"><i class="fa-solid fa-house"></i><span>Startseite</span></button>
+          <button class="nav-btn nav-icon-btn" data-view="flashcards"><i class="fa-solid fa-layer-group"></i><span>Karteikarten</span></button>
+          <button class="nav-btn nav-icon-btn" data-view="memory"><i class="fa-solid fa-brain"></i><span>Memory Lab</span></button>
+          <button class="nav-btn nav-icon-btn" data-view="coach"><i class="fa-solid fa-robot"></i><span>KI Lerncoach</span></button>
+        </nav>
+      </main>
+    </div>
+
+    <script>
+      window.KARIKATUREN_FILES = [
+        "dokument_kol.jpg",
+        "einsatz_kol.jpg",
+        "jahresurlaub_kol.jpg",
+        "leider_kol.jpg",
+        "made_in_china_jpg.jpg",
+        "schwierig_kol 2.jpg",
+        "suechtig_kol.jpg",
+      ];
+    </script>
+    <script src="pug_fragenkatalog.js"></script>
+    <script src="mindmap.js"></script>
+    <script src="flashcards.js"></script>
+    <script src="memorylab.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

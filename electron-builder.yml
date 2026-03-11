@@ -1,0 +1,43 @@
+appId: com.pugcompass.desktop
+productName: PuG Compass
+directories:
+  output: dist
+files:
+  - index.html
+  - style.css
+  - app.js
+  - mindmap.js
+  - flashcards.js
+  - memorylab.js
+  - pug_fragenkatalog.json
+  - pug_fragenkatalog.js
+  - data/**/*
+  - audio/**/*
+  - Karikaturen/**/*
+  - images/**/*
+  - PuG_compass_header.png
+  - lib/**/*
+  - scripts/**/*
+  - main.js
+mac:
+  target:
+    - target: dmg
+      arch:
+        - x64
+        - arm64
+    - target: dir
+      arch:
+        - x64
+        - arm64
+win:
+  target:
+    - target: nsis
+      arch:
+        - x64
+    - target: portable
+      arch:
+        - x64
+nsis:
+  oneClick: false
+  perMachine: false
+  allowToChangeInstallationDirectory: true
